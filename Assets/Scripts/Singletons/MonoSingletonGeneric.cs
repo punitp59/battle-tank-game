@@ -2,8 +2,9 @@
 using UnityEngine;
 
 public class MonoSingletonGeneric<T> : MonoBehaviour where T: MonoSingletonGeneric<T> {
+	private static T instance;
 	public static T Instance {get {return instance;}}
-	private void Awake() {
+	protected virtual void Awake() {
 		if (Instance == null){
 			Instance = (T)this;
 		}
@@ -14,8 +15,12 @@ public class MonoSingletonGeneric<T> : MonoBehaviour where T: MonoSingletonGener
 }
 
 public class PlayerTank : MonoSingletonGeneric<PlayerTank> {
-
+	protected override void Awake() {
+		
+	}
 }
 public class EnemyTank : MonoSingletonGeneric<EnemyTank> {
-	
+	protected override void Awake() {
+		
+	}
 }
