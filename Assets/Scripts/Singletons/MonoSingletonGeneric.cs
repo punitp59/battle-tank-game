@@ -5,22 +5,11 @@ public class MonoSingletonGeneric<T> : MonoBehaviour where T: MonoSingletonGener
 	private static T instance;
 	public static T Instance {get {return instance;}}
 	protected virtual void Awake() {
-		if (Instance == null){
-			Instance = (T)this;
+		if (instance == null) {
+			instance = (T)this;
 		}
-		else{
+		else {
 			Destroy(this);
 		}
-	}
-}
-
-public class PlayerTank : MonoSingletonGeneric<PlayerTank> {
-	protected override void Awake() {
-		
-	}
-}
-public class EnemyTank : MonoSingletonGeneric<EnemyTank> {
-	protected override void Awake() {
-		
 	}
 }
