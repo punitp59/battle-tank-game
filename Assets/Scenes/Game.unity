@@ -249,18 +249,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 95865265}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &95865267 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
-    type: 3}
-  m_PrefabInstance: {fileID: 95865265}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!850595691 &476671880
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -736,17 +724,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1726481560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccc5af8df83682545aefe37bae3a2705, type: 3}
+  m_Script: {fileID: 11500000, guid: fa23b5249d1b6a74eafa7f8b3a33f166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlayerNumber: 1
-  m_Speed: 12
-  m_TurnSpeed: 180
-  m_MovementAudio: {fileID: 0}
-  m_EngineIdling: {fileID: 8300000, guid: 4932ab25b84dd7649b80af68a9660ddc, type: 3}
-  m_EngineDriving: {fileID: 8300000, guid: d7ca9fb5aa30155449192b23d7fb3336, type: 3}
-  m_PitchRange: 0.2
-  joystick: {fileID: 95865267}
+  tankView: {fileID: 5483969813911731482, guid: edbd0a8cd3a75ea4fb3f53396b1211f4,
+    type: 3}
 --- !u!54 &1726481563
 Rigidbody:
   m_ObjectHideFlags: 0
